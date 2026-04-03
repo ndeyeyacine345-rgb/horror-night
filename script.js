@@ -53,3 +53,36 @@ function demarrerChrono() {
 
 // Lancer le chrono au chargement de la page
 demarrerChrono();
+document.getElementById('form-halloween').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const nom = e.target.elements[0].value;
+    const prixUnitaire = parseInt(document.getElementById('formule').value);
+    const quantite = parseInt(document.getElementById('quantite').value); // On récupère le nombre
+    const mode = document.getElementById('paiement').value;
+    
+    // CALCUL DU TOTAL
+    const total = prixUnitaire * quantite;
+
+    const messageZone = document.getElementById('message-validation');
+    const detailsZone = document.getElementById('details-confirmation');
+    const enteteForm = document.getElementById('entete-form');
+
+    // Alerte avec le total
+    alert(`🎃 BOO ! Merci ${nom}. \nTes ${quantite} places sont bloquées. \nTotal à payer : ${total} FCFA.`);
+
+    e.target.style.display = 'none';
+    enteteForm.style.display = 'none';
+    
+    messageZone.style.display = 'block';
+    detailsZone.innerHTML = `
+        <span style="font-size: 2rem;">🎃 👻</span><br>
+        Salut <strong>${nom}</strong>,<br><br>
+        Tes <strong>${quantite} tickets</strong> pour la <strong>Pumpkin Horror Night</strong> sont réservés.<br>
+        Montant total à envoyer : <strong style="color: #ff4500;">${total} FCFA</strong><br>
+        Via <strong>${mode}</strong> au :<br>
+        <span style="font-size: 1.6rem; color: #ff9f43; display: block; margin: 15px 0;"><strong>76 774 71 65</strong></span>
+        On t'attend à 20H à la Fenêtre Mermoz !
+    `;
+});
+
