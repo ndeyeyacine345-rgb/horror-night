@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horror Night - Fenêtre Mermoz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="barre-navigation">
+    <div class="logo">👻HORRORMovieNight</div>
+    <ul class="liens-nav">
+        <li><a href="#accueil">ACCUEIL</a></li>
+        <li><a href="#tarifs">TARIFS</a></li>
+        <li><a href="#reservation" class="bouton-nav">RÉSERVER 🎃</a></li>
+    </ul>
+</nav>
+
+<header id="accueil" class="hero">
+    <div class="hero-contenu">
+        <div class="pumpkin-icon">🎃 👻</div>
+        <h1> HORROR MOVIE NIGHT</h1>
+        <p>Le cinéma le plus terrifiant de Dakar débarque à Mermoz.</p>
+        
+        <div id="chrono" class="compte-a-rebours">
+            <div class="unite">
+                <span id="jours">00</span>
+                <p>Jours</p>
+            </div>
+            <div class="unite">
+                <span id="heures">00</span>
+                <p>Heures</p>
+            </div>
+            <div class="unite">
+                <span id="minutes">00</span>
+                <p>Min</p>
+            </div>
+            <div class="unite">
+                <span id="secondes">00</span>
+                <p>Sec</p>
+            </div>
+        </div>
+
+        <div class="info-cle">
+            <span>📅 31 OCTOBRE</span>
+            <span>🕗 20H00</span>
+            <span>📍 FENÊTRE MERMOZ</span>
+        </div>
+        <a href="#reservation" class="bouton-action">
+            <span class="fantome-tremblant">👻</span> PRENDS TA PLACE... SI T'OSE 🎃
+        </a>
+    </div>
+</header>
+</header>
+
+<section id="tarifs" class="section">
+    <h2>reserve ta place 👻</h2>
+    <div class="grille-tarifs">
+        <div class="carte-tarif">
+            <h3>Formule simple</h3>
+            <div class="prix">15 000 FCFA</div>
+            <ul>
+                <li>Entrée Ciné Horreur</li>
+                <li>Transat standard +couette </li>
+            </ul>
+        </div>
+        <div class="carte-tarif mis-en-avant">
+            <span class="populaire">La Totale 🎃</span>
+            <h3>formule complete</h3>
+            <div class="prix">20 000 FCFA</div>
+            <ul>
+                <li>Entrée Ciné Horreur</li>
+                <li>Transat VIP+ couette </li>
+                <li>Boisson + Popcorn + Chocolat</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="reservation" class="formulaire-section">
+    <div class="cadre-form">
+        <div id="entete-form">
+            <h2>RESERVE TA PLACE 🎃</h2>
+            <p>Attention : Les places s'évaporent comme des fantômes.</p>
+        </div>
+        
+        <form id="form-halloween">
+            <input type="text" placeholder="Ton Nom de victime" required>
+            <input type="tel" placeholder="Numéro " required>
+            <select id="formule" required>
+                <option value="">Ta Formule</option>
+                <option value="15000">formule simple (15K)</option>
+                <option value="20000">formule(20K)</option>
+            </select>
+            <select id="paiement" required>
+                <option value="">Paiement via...</option>
+                <option value="Wave">Wave</option>
+                <option value="Orange Money">Orange Money</option>
+            </select>
+            <button type="submit" class="bouton-valider">VALIDER 🎃</button>
+        </form>
+
+        <div id="message-validation" style="display: none;">
+            <div class="succes-box">
+                <h3>RÉSERVATION VALIDÉE ! 🎃</h3>
+                <p id="details-confirmation"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="pied-page">
+    <p>🎃 2026  Horror Movie Night - Fenêtre Mermoz, Dakar.</p>
+    <section class="section-sponsors">
+    <h3>Ils nous soutiennent 💀</h3>
+    <div class="grille-sponsors">
+        <div class="logo-sponsor">
+            <img src="https://via.placeholder.com/150x80/1a1005/ff9f43?text=Sponsor+1" alt="Sponsor 1">
+        </div>
+        <div class="logo-sponsor">
+            <img src="https://via.placeholder.com/150x80/1a1005/ff9f43?text=Sponsor+2" alt="Sponsor 2">
+        </div>
+        <div class="logo-sponsor">
+            <img src="https://via.placeholder.com/150x80/1a1005/ff9f43?text=Sponsor+3" alt="Sponsor 3">
+        </div>
+        <div class="logo-sponsor">
+            <img src="https://via.placeholder.com/150x80/1a1005/ff9f43?text=Sponsor+4" alt="Sponsor 4">
+        </div>
+    </div>
+</section>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
