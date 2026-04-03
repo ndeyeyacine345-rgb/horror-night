@@ -20,7 +20,7 @@
 <header id="accueil" class="hero">
     <div class="hero-contenu">
         <div class="pumpkin-icon">🎃 👻</div>
-        <h1> HORROR MOVIE NIGHT</h1>
+        <h1>HORROR MOVIE NIGHT</h1>
         <p>Le cinéma le plus terrifiant de Dakar débarque à Mermoz.</p>
         
         <div id="chrono" class="compte-a-rebours">
@@ -52,7 +52,6 @@
         </a>
     </div>
 </header>
-</header>
 
 <section id="tarifs" class="section">
     <h2>reserve ta place 👻</h2>
@@ -62,16 +61,16 @@
             <div class="prix">15 000 FCFA</div>
             <ul>
                 <li>Entrée Ciné Horreur</li>
-                <li>Transat standard +couette </li>
+                <li>Transat standard + couette</li>
             </ul>
         </div>
         <div class="carte-tarif mis-en-avant">
             <span class="populaire">La Totale 🎃</span>
-            <h3>formule complete</h3>
+            <h3>Formule complète</h3>
             <div class="prix">20 000 FCFA</div>
             <ul>
                 <li>Entrée Ciné Horreur</li>
-                <li>Transat VIP+ couette </li>
+                <li>Transat VIP + couette</li>
                 <li>Boisson + Popcorn + Chocolat</li>
             </ul>
         </div>
@@ -81,48 +80,46 @@
 <section id="reservation" class="formulaire-section">
     <div class="cadre-form">
         <div id="entete-form">
-            <h2>RESERVE TA PLACE 🎃</h2>
+            <h2>RÉSERVE TA PLACE 🎃</h2>
             <p>Attention : Les places s'évaporent comme des fantômes.</p>
         </div>
         
         <form id="form-halloween">
             <input type="text" placeholder="Ton Nom de victime" required>
-            <input type="tel" placeholder="Numéro " required>
+            
+            <input type="tel" placeholder="Numéro WhatsApp" required>
+            
             <select id="formule" required>
-                <option value="">Ta Formule</option>
-                <option value="15000">formule simple (15K)</option>
-                <option value="20000">formule(20K)</option>
+                <option value="">Ta Formule 🎃</option>
+                <option value="15000">Formule Simple (15K)</option>
+                <option value="20000">Formule Complète (20K) 👻</option>
             </select>
+
+            <div class="input-group" style="text-align: left; margin: 10px 0;">
+                <label for="quantite" style="color: #ff9f43; font-size: 0.9rem; margin-left: 5px;">Nombre de tickets :</label>
+                <input type="number" id="quantite" value="1" min="1" max="10" required 
+                       style="width: 100%; padding: 14px; background: #222; border: 1px solid #444; color: white;">
+            </div>
+            
             <select id="paiement" required>
                 <option value="">Paiement via...</option>
                 <option value="Wave">Wave</option>
                 <option value="Orange Money">Orange Money</option>
             </select>
+            
             <button type="submit" class="bouton-valider">VALIDER 🎃</button>
         </form>
 
         <div id="message-validation" style="display: none;">
             <div class="succes-box">
                 <h3>RÉSERVATION VALIDÉE ! 🎃</h3>
-                <p id="details-confirmation"></p>
+                <div id="details-confirmation"></div>
             </div>
         </div>
     </div>
 </section>
-    <select id="formule" required>
-    <option value="">Ta Formule 🎃</option>
-    <option value="15000">Petite Citrouille (15K)</option>
-    <option value="20000">Grande Citrouille (20K) 👻</option>
-</select>
 
-<div class="input-group">
-    <label for="quantite" style="color: #ff9f43; display: block; margin-bottom: 5px;">Nombre de tickets :</label>
-    <input type="number" id="quantite" value="1" min="1" max="10" required>
-</div>
-
-<footer class="pied-page">
-    <p>🎃 2026  Horror Movie Night - Fenêtre Mermoz, Dakar.</p>
-    <section class="section-sponsors">
+<section class="section-sponsors">
     <h3>Ils nous soutiennent 💀</h3>
     <div class="grille-sponsors">
         <div class="logo-sponsor">
@@ -139,6 +136,9 @@
         </div>
     </div>
 </section>
+
+<footer class="pied-page">
+    <p>🎃 2026 Horror Movie Night - Fenêtre Mermoz, Dakar.</p>
 </footer>
 
 <script src="script.js"></script>
