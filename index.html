@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horror Night - Fenêtre Mermoz</title>
+    <title>Horror Movie Night - Fenêtre Mermoz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -47,32 +47,40 @@
             <span>🕗 20H00</span>
             <span>📍 FENÊTRE MERMOZ</span>
         </div>
-        <a href="#reservation" class="bouton-action">
-            <span class="fantome-tremblant">👻</span> PRENDS TA PLACE... SI T'OSE 🎃
-        </a>
+        <a href="#reservation" class="bouton-action">PRENDS TA PLACE... SI T'OSE 🎃</a>
     </div>
 </header>
 
 <section id="tarifs" class="section">
-    <h2>reserve ta place 👻</h2>
+    <h2>Nos Formules Horrifiques 👻</h2>
     <div class="grille-tarifs">
         <div class="carte-tarif">
-            <h3>Formule simple</h3>
+            <div class="tarif-header">
+                <h3>Formule Simple</h3>
+                <span class="sous-titre">Standard</span>
+            </div>
             <div class="prix">15 000 FCFA</div>
-            <ul>
-                <li>Entrée Ciné Horreur</li>
-                <li>Transat standard + couette</li>
+            <ul class="tarif-caracteristiques">
+                <li>✅ Entrée Ciné Horreur</li>
+                <li>✅ Transat standard + Couette</li>
+                <li>❌ Boisson & Popcorn</li>
             </ul>
+            <a href="#reservation" class="bouton-carte">Choisir</a>
         </div>
+
         <div class="carte-tarif mis-en-avant">
-            <span class="populaire">La Totale 🎃</span>
-            <h3>Formule complète</h3>
+            <span class="badge-populaire">La Totale 🎃</span>
+            <div class="tarif-header">
+                <h3>Formule Complète</h3>
+                <span class="sous-titre">Pack VIP</span>
+            </div>
             <div class="prix">20 000 FCFA</div>
-            <ul>
-                <li>Entrée Ciné Horreur</li>
-                <li>Transat VIP + couette</li>
-                <li>Boisson + Popcorn + Chocolat</li>
+            <ul class="tarif-caracteristiques">
+                <li>✅ Entrée Ciné Horreur</li>
+                <li>✅ Transat VIP + Couette</li>
+                <li>✅ Boisson + Popcorn + Chocolat</li>
             </ul>
+            <a href="#reservation" class="bouton-carte">Choisir</a>
         </div>
     </div>
 </section>
@@ -80,25 +88,23 @@
 <section id="reservation" class="formulaire-section">
     <div class="cadre-form">
         <div id="entete-form">
-            <h2>RÉSERVE TA PLACE 🎃</h2>
+            <h2>REJOINDRE LA NUIT 🎃</h2>
             <p>Attention : Les places s'évaporent comme des fantômes.</p>
         </div>
         
         <form id="form-halloween">
             <input type="text" placeholder="Ton Nom de victime" required>
-            
             <input type="tel" placeholder="Numéro WhatsApp" required>
             
             <select id="formule" required>
                 <option value="">Ta Formule 🎃</option>
                 <option value="15000">Formule Simple (15K)</option>
-                <option value="20000">Formule Complète (20K) 👻</option>
+                <option value="20000">Formule Complète (20K)</option>
             </select>
 
-            <div class="input-group" style="text-align: left; margin: 10px 0;">
-                <label for="quantite" style="color: #ff9f43; font-size: 0.9rem; margin-left: 5px;">Nombre de tickets :</label>
-                <input type="number" id="quantite" value="1" min="1" max="10" required 
-                       style="width: 100%; padding: 14px; background: #222; border: 1px solid #444; color: white;">
+            <div class="input-group-tickets">
+                <label for="quantite">Nombre de tickets :</label>
+                <input type="number" id="quantite" value="1" min="1" max="10" required>
             </div>
             
             <select id="paiement" required>
@@ -107,7 +113,7 @@
                 <option value="Orange Money">Orange Money</option>
             </select>
             
-            <button type="submit" class="bouton-valider">VALIDER 🎃</button>
+            <button type="submit" class="bouton-valider">VALIDER MA RÉSERVATION 🎃</button>
         </form>
 
         <div id="message-validation" style="display: none;">
@@ -122,18 +128,10 @@
 <section class="section-sponsors">
     <h3>Ils nous soutiennent 💀</h3>
     <div class="grille-sponsors">
-        <div class="logo-sponsor">
-            <img src="https://via.placeholder.com/150x80/1a1005/ff9f43?text=Sponsor+1" alt="Sponsor 1">
-        </div>
-        <div class="logo-sponsor">
-            <img src="https://via.placeholder.com/150x80/1a1005/ff9f43?text=Sponsor+2" alt="Sponsor 2">
-        </div>
-        <div class="logo-sponsor">
-            <img src="https://via.placeholder.com/150x80/1a1005/ff9f43?text=Sponsor+3" alt="Sponsor 3">
-        </div>
-        <div class="logo-sponsor">
-            <img src="https://via.placeholder.com/150x80/1a1005/ff9f43?text=Sponsor+4" alt="Sponsor 4">
-        </div>
+        <div class="logo-sponsor"><img src="1.jpg" alt="Sponsor"></div>
+        <div class="logo-sponsor"><img src="2.png" alt="Sponsor"></div>
+        <div class="logo-sponsor"><img src="3.jpg" alt="Sponsor"></div>
+        <div class="logo-sponsor"><img src="4.png" alt="Sponsor"></div>
     </div>
 </section>
 
